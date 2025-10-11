@@ -29,7 +29,7 @@ def main():
         sys.exit(1)
 
     # Guarda la salida
-    escribir_salida(archivo_salida, A, costo)
+    escribir_salida(archivo_salida, A, costo )
 
 if __name__ == "__main__":
     main()

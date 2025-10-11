@@ -36,4 +36,12 @@ def rocFB(k, r, M, E):
                 best_cost = costo
                 best_A = A
 
-    return best_A, best_cost
+    # 🔹 Garantizar que todos los estudiantes estén presentes
+    A_final = {}
+    for ej, _ in E:
+        if best_A and ej in best_A:
+            A_final[ej] = best_A[ej]
+        else:
+            A_final[ej] = []
+
+    return A_final, best_cost
