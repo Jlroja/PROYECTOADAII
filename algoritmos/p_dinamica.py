@@ -47,12 +47,6 @@ def rocPD(k, r, M, E):
 
     costo, A = dp(0, cupos_iniciales)
 
-    # 🔹 Garantizar que todos los estudiantes estén presentes
-    A_final = {}
-    for ej, _ in E:
-        if A and ej in A:
-            A_final[ej] = A[ej]
-        else:
-            A_final[ej] = []
+    return A, costo / r
 
-    return A_final, costo / r
+ 
