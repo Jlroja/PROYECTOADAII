@@ -1,7 +1,7 @@
 import itertools
 from utils import insatisfaccion_general
 
-def rocFB(k, r, M, E):
+def rocFB(k, r, M, E, cancel_cb=None):
     materias_dict = dict(M)
     best_A = None
     best_cost = float("inf")

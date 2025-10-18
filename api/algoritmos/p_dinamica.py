@@ -2,7 +2,7 @@ import itertools
 from functools import lru_cache
 from utils import insatisfaccion_general
 
-def rocPD(k, r, M, E):
+def rocPD(k, r, M, E, cancel_cb=None):
     materias_dict = dict(M)
     cupos_iniciales = tuple(materias_dict[m] for m, _ in M)
     codigos_materias = [m for m, _ in M]

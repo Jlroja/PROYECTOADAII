@@ -1,6 +1,6 @@
 from utils import insatisfaccion_general
 
-def rocV(k, r, M, E):
+def rocV(k, r, M, E, cancel_cb=None):
     cupos_restantes = dict(M)
     A = {}
 
