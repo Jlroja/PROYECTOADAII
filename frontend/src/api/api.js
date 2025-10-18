@@ -23,7 +23,6 @@ export async function cancelJob(jobId) {
 
 export function buildDownloadUrl(download_path_or_fileId) {
   const base = BASE.replace(/\/$/, "");
-  // acepta "/download/{file_id}" o directamente un file_id
   const path = download_path_or_fileId.startsWith("/download/")
     ? download_path_or_fileId
     : `/download/${download_path_or_fileId}`;

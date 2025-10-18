@@ -97,7 +97,6 @@ async def execute_job(job_id: str, algoritmo: Algoritmo, tmp_in_path: str, filen
 
         salida_txt = build_output_text(costo, A)
 
-        # Nombrar archivo con algoritmo + nombre base + timestamp
         base_name = os.path.splitext(filename)[0].replace(" ", "_")
         time_tag = timestamp_str()
         file_id = f"{algoritmo}_{base_name}_{time_tag}"
